@@ -1,0 +1,312 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 4vw auto;
+    max-width: fit-content;
+    font-size: 1.2rem;
+}
+
+
+#adminLogin {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+
+}
+
+#adminLogin label {
+    margin: 1vw 0; 
+}
+
+.adminBody {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginDiv {
+    width: fit-content;
+    margin: 4vw auto; 
+    align-items: center;
+    justify-content: center;
+}
+
+.title-of-page {
+    text-align: center;
+}
+
+.form-container label {
+    margin-top: 1vw;
+    padding: 0.5vw 0;
+}
+
+input, select {
+    font-size: 1rem;
+    width: fit-content;
+}
+
+
+.form-container {
+    display: grid;
+    justify-items: center;
+}
+
+.categories label,
+.languages label {
+    margin-right: 2vw;
+    font-size: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+section p {
+    margin: 1.2vw 0; 
+}
+
+.settingsSection {
+    margin: 2vw;
+    padding: 2vw; 
+    width: 60vw;
+}
+
+.changePasswordSection {
+    margin: 0 0 4vw 0;
+}
+
+button {
+    font-size: 1.2rem; 
+    font-family: 'Quicksand', sans-serif;
+    background-color: #215DD6;
+    color: white; 
+    border: none; 
+    padding: 10px 16px; 
+    border-radius: 10px; 
+}
+
+input {
+    font-size: 1.2rem; 
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px 16px; 
+    border-radius: 10px; 
+}
+
+.accountsSection {
+    margin-top: 4vw; 
+    background-color: #E8F0FF;
+    padding: 2vw; 
+}
+
+.accountsSection h2 {
+    margin-bottom: 2vw; 
+}
+
+.accountsSection h3 {
+    margin: 2vw 0 1vw 0;
+}
+
+.accountsSection div {
+    display: flex; 
+}
+
+.accountsSection div button {
+    height: fit-content; 
+}
+
+.accountsSection div p {
+    margin-right: auto; 
+}
+
+.deleteAccountsSection h3 {
+    margin: 2vw 0 1vw 0; 
+}
+
+.accounts{
+ display: flex;
+ flex-direction: column;
+}
+.account-list{
+display: flex;
+justify-items: space-between;
+}
+
+.boardgame-container {
+    margin-top:10%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto auto;
+    max-height: fit-content;
+    column-gap: 5%;
+    align-content: flex-start;
+    /* background-color: aqua; */
+}
+
+.boardgame-container img {
+    grid-row: 1/5;
+    max-width: 100%;
+}
+.boardgameDescription{
+    grid-column: 2;
+    padding-top: 2%;
+}
+
+.small-info {
+    grid-column: 2;
+    display: flex;
+    gap: 5%;
+}
+
+.small-info div {
+    display: flex;
+}
+
+.boardgameEdit {
+    display: flex;
+    justify-content: space-between;
+}
+
+ .create-update-container {
+    display: flex; 
+    flex-direction: column;
+    background-color: #E8F0FF;
+    padding: 2vw; 
+    margin: 0 auto; 
+} 
+
+.create-update-container input[type=number] {
+    width: 100px;
+}
+
+.create-update-container input[type=text] {
+    width: 100%;
+}
+
+.description-textarea {
+    width: 50%;
+    height: 200px;
+    resize: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#loginBtn, #logoutBtn {
+    margin: 0, 4vw; 
+    
+    
+}
+
+.categories {
+    column-count: 3; 
+}
+
+#addBoardgame {
+    display: none;
+    background-color: #E8F0FF;
+    padding: 2vw; 
+}
+
+
+
+#addImageurl, #addTitle, #addDescription {
+    width: 50%; 
+    margin: 1vw 0;
+}
+
+#addBoardgameNumbers {
+    column-count: 3;
+    margin: 2vw 0;
+}
+
+#addBoardgameNumbers div {
+    display: grid; 
+    text-align: right;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    align-items: center;
+}
+
+#addBoardgameNumbers div input {
+    margin: 1vw;
+}
+
+#submitAddBoardgame {
+    margin: 2vw auto; 
+
+}
+
+
+nav ul {
+    width: 80vw; 
+    margin-bottom: 2vw; 
+    display: flex; 
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    margin: 1vw 2vw; 
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+#boardgameSection {
+    width: 80vw; 
+}
+
+
+#addNewBoardgameSection {
+    margin: 4vw 0; 
+    display: flex; 
+    column-gap: 2vw; 
+    height: 10px;
+    align-items: center;
+
+}
+
+.pCentered {
+    text-align: center;
+    margin-top: 1vw; 
+    margin-bottom: 2vw; 
+}
+
+#submitBtn {
+    margin: 2vw 0; 
+}
+
+.submitBtn {
+    margin: 2vw auto; 
+    width: fit-content;
+}
+
+.checkbox {
+    font-size: 42px;
+}
+
+.small-info div {
+    display: flex; 
+    align-items: center;
+    column-gap: 6px;
+}
+
+.resultsP {
+    text-align: right;
+}
